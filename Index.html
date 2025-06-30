@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protefolio</title>
+    <link rel="icon" href="New Template-Photoroom.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="prot.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            /* Prevent full page scroll */
+        }
+
+        .main {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .c1 {
+            width: 50%;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE */
+        }
+
+        .c1::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari */
+        }
+
+        .c2 {
+            width: 50%;
+            height: 100vh;
+            background-color: #e9edc9;
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #222;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-family: "Nunito", sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ✅ Download Button (Fixed Top-Right) -->
+    <a href="resume.pdf" download class="download-btn">Download CV</a>
+
+    <div class="main">
+        <div class="c1">
+            <div class="nav">
+                <div class="dsp1">
+                    <span class="sp1">Shanmukh </span>
+                </div>
+                <div class="dsp2">
+                    <span><a href="#" onclick="scrollToCenter('about')">about</a></span>
+                    <span><a href="#" onclick="scrollToCenter('skills')">resume</a></span>
+                    <span><a href="#" onclick="scrollToCenter('contact')">contact</a></span>
+                </div>
+            </div>
+
+            <div class="space1"></div>
+
+            <div class="content">
+                <h1>Shanmukha Srinivasan</h1>
+                <h2 class="subtitle">Java Full Stack Developer</h2>
+                <ul>
+                    <li><span>Phone:</span> (+91) 8328625769</li>
+                    <li><span>Email:</span> saiarun12718@gamil.com</li>
+                    <li><span>Address:</span> Eluru</li>
+                </ul>
+                <a href="https://www.linkedin.com/in/sai-arun-56a98024a/">linkedin</a>
+            </div>
+
+            <div class="see-cv">
+                <a href="#skills">see full CV</a>
+            </div>
+
+            <div class="Space"></div>
+
+            <div class="about-text" id="about">
+                <h2>ABOUT</h2>
+                <div class="line"></div>
+                <p>
+                    I am a dedicated and creative developer with a passion for building user-focused web applications...
+                </p>
+            </div>
+
+            <div class="Space"></div>
+
+            <div class="skills-section" id="skills">
+                <h2>SKILLS & EXPERTISE</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>Proficient in Java, Python, JavaScript, and SQL.</li>
+                    <li>Experienced with React.js, Node.js, and Express.js.</li>
+                    <li>Hands-on experience in MongoDB, MySQL, and GitHub.</li>
+                    <li>Strong problem-solving skills using Data Structures and Algorithms.</li>
+                    <li>Trained in ServiceNow platform and workflow automation.</li>
+                </ul>
+            </div>
+
+            <div class="Space"></div>
+
+            <div class="education-section" id="education">
+                <h2>Education</h2>
+                <div class="line"></div>
+                <ul>
+                    <li><b>2021-2025</b></li>
+                    <li><b>Sri Vasavi Engineering College</b></li>
+                    <li>Computer Science and Engineering</li>
+                    <li>Strong problem-solving skills using Data Structures and Algorithms.</li>
+                    <li>Trained in ServiceNow platform and workflow automation.</li>
+                </ul>
+            </div>
+
+            <div class="Space"></div>
+
+            <div class="achivementscerticiates-section" id="achievements">
+                <h2>Achievements & Certificates</h2>
+                <div class="line"></div>
+                <ul>
+                    <li><b>ServiceNow Certified Application Developer</b></li>
+                    <li><b>ServiceNow Certified System Administrator</b></li>
+                    <li><b>Prompt Engineering</b> - Great Learning</li>
+                </ul>
+            </div>
+
+            <div class="Space"></div>
+
+            <div class="projects-section" id="projects">
+                <h2>Projects</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>
+                        <b>Chatting Web Application</b> – Node.js, Socket.io, HTML, CSS (July 2024)<br />
+                        • Developed a real-time chat application using Node.js and Socket.io for instant
+                        messaging.<br />
+                        • Designed a responsive UI using HTML, CSS, and JavaScript for seamless experience.
+                    </li>
+                    <li>
+                        <b>Memories</b> – MERN Stack, Material UI, Redux (July 2024)<br />
+                        • Built a full-stack social media app with CRUD operations using MongoDB, Express.js, React, and
+                        Node.js.<br />
+                        • Used Material UI for frontend design and Redux for state management.<br />
+                        • Deployed the app with reliable access and consistent UI across devices.
+                    </li>
+                    <li>
+                        <b>Number Puzzle</b> – Java, Swing (Jan 2024)<br />
+                        • Developed a puzzle game with GUI using Java Swing.<br />
+                        • Implemented logic and UI using Java Frames for an interactive experience.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Space"></div>
+
+            <div class="contact-section" id="contact">
+                <h2>Contact</h2>
+                <div class="line"></div>
+                <ul>
+                    <li><b>Phone:</b> (+91) 8328625769</li>
+                    <li><b>Email:</b> saiarun12718@gmail.com</li>
+                    <li><a href="#">linkedin</a></li>
+                </ul>
+            </div>
+
+            <div class="space1"></div>
+
+            <div class="footers">
+                this is made by shanmukha srinivasan
+            </div>
+        </div>
+
+        <div class="c2">
+            <img src="imresizer-1727157701398.jpg" alt="" />
+        </div>
+    </div>
+
+    <!-- Scroll-to-center Script -->
+    <script>
+        function scrollToCenter(id) {
+            const container = document.querySelector(".c1");
+            const target = document.getElementById(id);
+            const offsetTop = target.offsetTop;
+            const centerOffset =
+                offsetTop - container.offsetTop - container.clientHeight / 2 + target.clientHeight / 2;
+
+            container.scrollTo({
+                top: centerOffset,
+                behavior: "smooth",
+            });
+        }
+    </script>
+</body>
+
+</html>

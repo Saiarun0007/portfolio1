@@ -1,0 +1,447 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: chartreuse;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    text-decoration: underline;
+
+
+
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.c1 {
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+}
+
+.c1::-webkit-scrollbar {
+    display: none;
+}
+
+.download-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    z-index: 1000;
+}
+
+.c2 {
+    width: 50%;
+    background-color: #e9edc9;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1 {
+    height: 100%;
+    width: 50%;
+    background-color: #f9f9f9;
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    overflow: scroll;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+
+
+}
+
+.c1::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+.c2 {
+    height: 100%;
+    width: 50%;
+    background-color: #e9edc9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 420px;
+    width: 306px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        /* soft shadow */
+        0 8px 20px rgba(0, 0, 0, 0.15);
+    /* deeper ambient shadow */
+    border-radius: 10px;
+    /* optional: for a smoother look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* optional hover effect */
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.15),
+        0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.see-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav span {
+    font-family: "Edu QLD Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* Changed from yellow to dark gray */
+    margin: 0 10px;
+
+}
+
+.nav .dsp1 {
+    display: inline-block;
+    position: relative;
+    flex: 1;
+    /* background-color: aquamarine; */
+
+
+    /* Pushes .dsp1 to the left */
+}
+
+.nav .dsp2 {
+    /* background-color: rgb(188, 120, 31); */
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    /* Pushes .dsp2 to the right */
+}
+
+.subtitle {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.content {
+
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    /* Changed from yellow to dark gray */
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content ul li span {
+    font-style: normal;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #222;
+
+}
+
+ul li b,
+strong {
+    font-weight: 1000;
+}
+
+.content ul li {
+    margin: 5px 0;
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #363434;
+}
+
+
+.about-text {
+    flex: 1;
+    padding-right: 40px;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.line {
+    height: 2px;
+    background-color: black;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.Space {
+    height: 40%;
+}
+
+.space1 {
+    height: 20%;
+}
+
+
+
+.skills-section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-section .line {
+    height: 2px;
+    background-color: black;
+    width: 60px;
+    margin: 0 auto 30px;
+}
+
+.skills-section ul {
+    list-style-type: disc;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 60px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.education-section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.education-section .line {
+    height: 2px;
+    background-color: black;
+    width: 60px;
+    margin: 0 auto 30px;
+}
+
+.education-section,
+ul {
+
+    list-style-type: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+.achivementscerticiates-section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.achivementscerticiates-section .line {
+    height: 2px;
+    background-color: black;
+    width: 60px;
+    margin: 0 auto 30px;
+}
+
+.achivementscerticiates-section,
+ul {
+
+    list-style-type: none;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.projects-section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projects-section .line {
+    height: 2px;
+    background-color: black;
+    width: 60px;
+    margin: 0 auto 30px;
+}
+
+.projects-section ul {
+    list-style-type: disc;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 60px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.projects-section ul li b {
+    font-weight: 1000;
+    color: #222;
+
+}
+
+.projects-section ul li {
+    margin: 5px 0;
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #3d3d3d;
+}
+
+/* conteatn sectio  */
+.contact-section h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-section .line {
+    height: 2px;
+    background-color: black;
+    width: 60px;
+    margin: 0 auto 30px;
+}
+
+.contact-section ul {
+    list-style-type: disc;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 60px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-section ul li b {
+    font-weight: 1000;
+    color: #222;
+
+}
+
+.projects-section ul li {
+    margin: 5px 0;
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #3d3d3d;
+}
+
+.footers {
+    text-align: center;
+    font-family: "Poltawski Nowy", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #222;
+    padding: 20px 0px 5px 0px;
+    margin-bottom: 0px;
+}
