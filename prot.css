@@ -445,3 +445,50 @@ ul {
     padding: 20px 0px 5px 0px;
     margin-bottom: 0px;
 }
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    html,
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .c1,
+    .c2 {
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .c1 {
+        overflow-y: auto;
+    }
+
+    .c2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-text {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .download-btn {
+        position: static;
+        margin-top: 10px;
+    }
+}

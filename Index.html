@@ -83,6 +83,32 @@
         .download-btn:hover {
             background-color: #444;
         }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .c1,
+            .c2 {
+                width: 100%;
+                position: static;
+                height: auto;
+            }
+
+            .c2 {
+                order: -1;
+                background-color: #e9edc9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .c1 {
+                overflow-y: visible;
+            }
+        }
     </style>
 </head>
 

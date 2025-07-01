@@ -2,58 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>About Section</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protefolio</title>
     <link rel="icon" href="New Template-Photoroom.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="prot.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+
     <style>
-        .skills-section {
-            padding: 50px;
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .main {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .c1 {
+            width: 50%;
+            height: 100vh;
+            overflow-y: auto;
             background-color: #f9f9f9;
-            font-family: 'Georgia', serif;
-            color: #222;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
 
-        .skills-section h2 {
-            text-transform: uppercase;
-            font-size: 22px;
-            letter-spacing: 5px;
-            text-align: center;
-            margin-bottom: 10px;
+        .c1::-webkit-scrollbar {
+            display: none;
         }
 
-        .skills-section .line {
-            height: 2px;
-            background-color: black;
-            width: 60px;
-            margin: 0 auto 30px;
+        .c2 {
+            width: 50%;
+            height: 100vh;
+            background-color: #e9edc9;
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .skills-section ul {
-            list-style-type: disc;
-            max-width: 700px;
-            margin: 0 auto;
-            padding-left: 20px;
-            font-size: 16px;
-            line-height: 1.8;
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #222;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-family: "Nunito", sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            z-index: 999;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background-color: #444;
+        }
+
+        img {
+            height: 420px;
+            width: 306px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 10px 25px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 
 <body>
-
-    <section class="skills-section">
-        <h2>SKILLS & EXPERTISE</h2>
-        <div class="line"></div>
-        <ul>
-            <li>Proficient in Java, Python, JavaScript, and SQL.</li>
-            <li>Experienced with React.js, Node.js, and Express.js.</li>
-            <li>Hands-on experience in MongoDB, MySQL, and GitHub.</li>
-            <li>Strong problem-solving skills using Data Structures and Algorithms.</li>
-            <li>Trained in ServiceNow platform and workflow automation.</li>
-        </ul>
-    </section>
-
-
+    <a href="resume.pdf" download class="download-btn">Download CV</a>
+    <div class="main">
+        <div class="c1">
+            <!-- Add your scrollable resume content here -->
+            <h1>Shanmukha Srinivasan</h1>
+            <p>Java Full Stack Developer</p>
+            <p>Email: saiarun12718@gamil.com</p>
+            <p>Phone: (+91) 8328625769</p>
+            <p>Address: Eluru</p>
+            <!-- Add the rest of your resume content -->
+        </div>
+        <div class="c2">
+            <img src="imresizer-1727157701398.jpg" alt="Profile Image" />
+        </div>
+    </div>
 </body>
 
 </html>
